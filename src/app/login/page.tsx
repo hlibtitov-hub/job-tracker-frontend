@@ -5,8 +5,8 @@ import Link from 'next/link'
 import { useAuthStore } from '@/store/useJobStore'
 
 export default function LoginPage() {
-  const [email, setEmail] = useState('alex@example.com')
-  const [password, setPassword] = useState('password')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
   const { login } = useAuthStore()
@@ -81,11 +81,6 @@ export default function LoginPage() {
             </button>
           </form>
 
-          <div className="mt-4 pt-4 border-t border-neutral-100">
-            <p className="text-xs text-neutral-400 text-center">
-              Demo: alex@example.com / password
-            </p>
-          </div>
         </div>
 
         <p className="text-center text-sm text-neutral-500 mt-4">
