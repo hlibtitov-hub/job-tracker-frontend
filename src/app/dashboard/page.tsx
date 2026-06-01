@@ -30,7 +30,7 @@ export default function DashboardPage() {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-2xl font-semibold text-neutral-900 tracking-tight">
-            Good morning, {user?.name?.split(' ')[0]} 👋
+            Welcome back, {user?.name?.split(' ')[0]} 👋
           </h1>
           <p className="text-neutral-500 text-sm mt-1">Here&apos;s your job search overview</p>
         </div>
